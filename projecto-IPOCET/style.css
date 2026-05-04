@@ -1,0 +1,122 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  display: block;
+  margin: 15px auto;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+button {
+  margin: 15px 5px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:nth-child(1) {
+  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  color: white;
+}
+
+button:nth-child(1):hover {
+  background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+button:nth-child(2) {
+  background: linear-gradient(45deg, #4ecdc4, #44a08d);
+  color: white;
+}
+
+button:nth-child(2):hover {
+  background: linear-gradient(45deg, #44a08d, #4ecdc4);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+}
+
+button:nth-child(3) {
+  background: linear-gradient(45deg, #a8e6cf, #52c234);
+  color: white;
+}
+
+button:nth-child(3):hover {
+  background: linear-gradient(45deg, #52c234, #a8e6cf);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(168, 230, 207, 0.4);
+}
+
+#msg {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ffcccc;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
